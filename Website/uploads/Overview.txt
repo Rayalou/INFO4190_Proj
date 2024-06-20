@@ -1,0 +1,5 @@
+Overview
+
+Cybersecurity is a vast and diverse field. Whether you're setting up a firewall or creating a password policy, your actions impact all levels of an organization, from its technicians and help desk to the CEO. Cybersecurity also affects every piece of technology in an organization: mobile phones, servers, and even devices like industrial control systems. A field this extensive and deep can be a little intimidating when you first enter it. This is especially true if you're trying to learn about cybersecurity without entering the field. For example, you might be an IT department head who wants to learn more so you can better protect your organization. 
+
+This chapter starts slow: we’ll talk about what cybersecurity is and isn’t, as well as the difference between white hat and black hat hackers.
