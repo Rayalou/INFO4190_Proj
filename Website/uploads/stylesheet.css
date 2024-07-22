@@ -78,13 +78,11 @@ nav ul li a:hover {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 250px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  /* Adjust the width of the dropdown content based on its content */
   width: auto;
-  /* Set maximum height and enable overflow scrolling */
-  max-height: 200px; /* Adjust as needed */
+  max-height: 200px;
   overflow-y: auto;
 }
 
@@ -103,71 +101,147 @@ nav ul li a:hover {
   display: block;
 }
 
-/*End of the dropdown */
-
 .features {
 	background-color: white; 
 	width: 100%; 
-	height: 90vh;
+	height: auto;
 	box-sizing: border-box;
 	display: flex; 
-	justify-content: center;
-	align-items: center;
-	flex-direction: column; 
-	margin-top: -100px; 
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 50px 0;
 }
 
 .features-container {
-	display: flex; 
-	justify-content: center; 
-	align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 60%;
 }
 
-.feature-box { 
-	background: transparent;
-	width: 300px;
-	height: 450px;
-	margin: 20px;
-	border-radius: 10px;
-	overflow: hidden;
-	position: relative;
-	box-shadow: yellow;
+.feature-box {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background: transparent;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
 }
 
-.f-img img{
-	width: 100%;
-	height: 63%;
+.feature-box .f-text {
+    flex: 1;
+    padding-right: 20px;
+    color: black;
 }
 
-.f-text {
-	width: 100%; 
-	height: 30%;
-	display: flex; 
-	justify-content: center; 
-	align-items: center;
-	flex-direction: column;
-	color: black; 
+.feature-box .f-text h4 {
+    margin-top: 0;
 }
 
-.f-text h4 {
-	margin-top: -12px;
+.feature-box .f-text p {
+    margin: 10px 0 0;
 }
 
-.f-text a {
-		color: white;
-		background-color: rgb(17,0,255); 
-		box-sizing: border-box;
-		padding: 10px 5px;
-		margin: 10px 5px;
-		font-weight: bold; 
+.image-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.f-text a:hover {
-	color: yellow;
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.6s ease-in-out;
 }
 
-.active {
-	color: yellow;
+.info-box {
+    width: 100%;
+    padding: 60px; /* Increase padding to make the box bigger */
+    box-sizing: border-box;
+    background-color: #DAE742; /* Adjust background color as needed */
+    margin-top: 10px; /* Adjust the top margin as needed */
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-content p {
+    flex: 1;
+    text-align: center;
+    margin: 30px; /* Increase margin to add more space around paragraphs */
+    min-width: 250px; /* Minimum width for responsiveness */
+    font-size: 1.4em; /* Increase font size for better readability */
+    box-sizing: border-box;
+}
+
+/* Style for the reviews section */
+
+.reviews {
+    width: 100%;
+    padding: 60px;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reviews-content {
+    position: relative;
+    height: 150px; /* Adjust based on your content */
+    overflow: hidden;
+}
+
+.review-content {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.review-content.active {
+    display: block;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #717171;
 }
 
 .main-part {
@@ -203,12 +277,24 @@ nav ul li a:hover {
 }
 
 .main-part a.login-link {
-    color: #0066cc; /* Blue color for the link */
-    text-decoration: underline; /* Underlined text */
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    color: #0066cc; 
+    text-decoration: underline; 
+    transition: color 0.3s ease-in-out; 
 }
 
 .main-part a.login-link:hover {
-    color: #004080; /* Darker blue on hover */
+    color: #004080; 
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
